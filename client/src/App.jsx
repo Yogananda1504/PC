@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import About from './components/About/About'
+import Information from './components/About/Information'
+
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
+      <About/>
       
     </>
   )

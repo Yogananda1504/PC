@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #00c8ff; 
+    color: white;
+    font-size: 20rem;
+}
+
+.page1{
+    width: 100%;
+    height: calc(100vh - 55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 8vw 5vw 8vw 5vw;
+    
+}
+
+.page1 .first{
+    height: 10%;
+    width: 100%;
+    font-size: 10vw;
+ 
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+ 
+
+}
+
+.page1 .second{
+    height: 33.33%;
+    width: 100%;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+   
+}
+
+.page1 .content{
+    height: 33.3%;
+    width: 100%;
+    
+    
+}
+
+.page1 .content span{
+    color: #00c8ff;
+    font-size: 4vw;
+}
+
+@media (max-width:600px) {
+    .page1{
+        width: 100%;
+        
+        padding: 10vw 10vw 10vw 10vw;
+        gap: 10vw;
+    }
+
+    .page1 .first{
+        height: 10%;
+        font-size: 8vh;
+
+    }
+
+    .page1 .second{
+        height: 3%;
+        font-size: 17vw;
+    }
+
+    .page1 .content{
+        height: 40;
+        font-size: 5vh;
+        line-height: 2;
+    }
+
+    .page1 .content span{
+        font-size: 3vh;
+    }
+}
+ 
+
+
