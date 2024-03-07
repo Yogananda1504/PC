@@ -95,7 +95,7 @@
     position: relative;
     transition: all 0.5s;
     width: 20rem;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     margin-left: 5rem;
     font-weight: 600;
@@ -151,6 +151,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-left: 2vw;
    }
 
    .ls {
@@ -179,7 +180,7 @@ img {
 
   .About{
     margin: 0px;
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
 
