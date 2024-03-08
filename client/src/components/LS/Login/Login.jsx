@@ -1,55 +1,32 @@
-import React, { useState } from 'react';
+
+
+import React from 'react'
 import './Login.css';
-import Nav from '../../About/Nav';
-
 export default function Login() {
-    const [name, setName] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleName = (e) => {
-        setName(e.target.value);
-    };
-
-    const handlePassword = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleLogin = (e) => {
-        e.preventDefault(); // Prevent default form submission
-        // Emit login event with name and password
-        socket.emit('Login', { name: name, password: password });
-    };
-
-    return (
-        <form onSubmit={handleLogin}>
-            <Nav></Nav>
-            <div className="ocont">
-                <div className="Container">
-                    <div className="username">
-                        Username :
-                        <input
-                            type="text"
-                            name="Username"
-                            id="Username"
-                            placeholder="Enter your username"
-                            value={name}
-                            onChange={handleName}
-                        />
-                    </div>
-                    <div className="Password">
-                        Password :
-                        <input
-                            type="password"
-                            name="Password"
-                            id="Password"
-                            placeholder="Enter password"
-                            value={password}
-                            onChange={handlePassword}
-                        />
-                    </div>
-                    <button type="submit">Submit</button>
+  return (
+    <>
+        <div className="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <div className="input-box">
+                    <input type="text" name="" id="" placeholder='Username'required />
+                    <i class='bx bxs-user'></i>
                 </div>
-            </div>
-        </form>
-    );
+                <div className="input-box">
+                    <input type="password" name="" id="" placeholder='Password'required />
+                    <i class='bx bx-lock'></i>
+                </div>
+                <div className="remember-forget">
+                    <label><input type="checkbox" name="" id="" />Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" className='btn'>Login</button>
+                <div className="register-link">
+                    <p>Dont have an account? <a href="#">Register</a></p>
+                </div>
+
+            </form>
+        </div>
+    </>
+  )
 }
