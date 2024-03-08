@@ -89,7 +89,7 @@ async function validate(data) {
 
     } catch (error) {
         console.error('Error occurred during validation:', error);
-        throw error; // Rethrow the error to be caught by the calling code or handled appropriately
+        throw error; 
     }
 }
 
