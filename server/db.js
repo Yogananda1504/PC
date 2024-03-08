@@ -34,7 +34,7 @@ async function check_Username(username) {
         const findQuery = 'SELECT * FROM user_table WHERE user_name = $1';
         const result = await pool.query(findQuery, [username]);
 
-        // Handle the result as needed
+        
         if (result.rows.length > 0) {
             const user = result.rows[0];
             console.log('User found:', user);
@@ -45,7 +45,7 @@ async function check_Username(username) {
         }
     } catch (err) {
         console.error('Error occurred while finding user by username:', err);
-        throw err; // Rethrow the error to be caught by the calling code or handled appropriately
+        throw err;
     }
 }
 
@@ -64,7 +64,7 @@ async function check_email(email) {
         }
     } catch (err) {
         console.error('Error occurred while finding user by email:', err);
-        throw err; // Rethrow the error to be caught by the calling code or handled appropriately
+        throw err; 
     }
 }
 
@@ -85,7 +85,7 @@ async function validate(data) {
             emailStatus = true;
         }
 
-        // Use usernameStatus and emailStatus as needed for your validation logic
+        // Use usernameStatus and emailStatus as needed for validation logic
 
     } catch (error) {
         console.error('Error occurred during validation:', error);
@@ -93,7 +93,7 @@ async function validate(data) {
     }
 }
 
-// Example usage:
+
 
 
 module.exports={
