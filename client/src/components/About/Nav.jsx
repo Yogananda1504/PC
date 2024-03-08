@@ -27,7 +27,7 @@ function Nav() {
   return (
     <nav className='NavBar'>
       <div className="logo"><img src="./manit.png" alt="error" /><span>MANIT</span></div>
-      <div className="About">Student Companion</div>
+      <Link to={""}><div className="About">Student Companion</div></Link>
       <div className='ls'>
         <div  className="Login"><a href="">Login</a></div>
         <div className="SignUp"><a href=""> Sign Up<i className="fa-solid fa-arrow-right" id="arrow"></i></a></div>
